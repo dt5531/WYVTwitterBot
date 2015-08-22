@@ -25,7 +25,7 @@ html = o.open(website)
 i = 1
 
 while 1:
-    soup = bs(html)
+    soup = bs(html, "lxml")
     
     # Find all youtube links
     for link in soup.find_all('a'):
